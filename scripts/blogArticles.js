@@ -1,0 +1,80 @@
+﻿//PORTFOLIO blogArticles.js//
+/*
+(function() {                         //CLASS07//
+
+
+var rawData = [
+
+  {
+    title: 'Marshall Adult Education',
+    category: 'activities',
+    author: 'no author',
+    authorUrl: 'http://resources.marshalladulteducation.org/reading_skills_home.htm',
+    publishedOn: '00-00-00',
+    body: '<p> This project was designed to create leveled reading selections that are appropriate for and valued by adult learners.'
+    + ' These materials, combined with the research-proven strategies of repeated reading and guided oral reading, aid in building learners fluency and comprehension skills.  The materials correspond to Casas 200 - 235.'
+    + ' This project helps adults become better readers and more informed consumers, parents, employees, citizens and community members.'
+    + ' The focus of these reading selections will be on topics such us:  Civics, Employment, Housing, Health, School, Money, and Government.'
+    + ' This project is funded in part through an EL/Civics Grant from the MN Dept. of Ed - ABE Division and mini-grant from the Minnesota Literacy Council. </p>'
+  },
+  {
+    title: 'Southern Lincs-Learning Activities',
+    category: 'activities',
+    author: 'no author',
+    authorUrl: 'http://slincs.coe.utk.edu/gtelab/find.html',
+    publishedOn: '00-00-00',
+    body: '<p> Southern LINCS is a regional site for LINCS , a national electronic information and communication system for adult literacy. This site is a focal point for the southern region with links to state, regional, and national information. SLINCS is hosted by the Southern Regional Technology Center at the Center for Literacy Studies, University of Tennessee. '
+     + ' Southern LINCS , a consortium of fourteen southern states, is coordinated by the Center for Literacy Studies at The University of Tennessee. The fourteen consortium members are Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, Oklahoma, South Carolina, Tennessee, Texas, Virginia, and West Virginia. </p>'
+  },
+  {
+
+    title: 'California Distance Learning Project - Adult Learning Activities',
+    category: 'activities',
+    author: 'California Distance Learning Project',
+    authorUrl: 'http://www.cdlponline.org',
+    publishedOn: ' 2011-01-01',
+    body: '<p> Use this free site to build reading and life skills </p>'
+  },
+  {
+
+    title: 'National Adult Literacy Agency- Literacy Tools ie',
+    category: 'activities',
+    author: 'National Adult Literacy Agency',
+    authorUrl: 'http://www.literacytools.ie/games.cfm',
+    publishedOn: '2016-01-01',
+    body: '<p> Welcome to the games section.'
+    + ' Listed here are a few games that can be played instantly online.'
+    + ' Please choose a game category or click the button below to view a tour of the games. </p>'
+  },
+  {
+
+    title: '10 Blogs about Adult Education',
+    category: 'Articles',
+    author: 'Ann Walker',
+    authorUrl: 'https://annwalkerwea.wordpress.com/2013/08/10-blogs-about-adult-education',
+    publishedOn: '2013-08-27',
+    body: '<p>There are many excellent blogs about education. Most of those that I’ve come across focus on teaching, learning and leadership in schools and there’s a lot to learn from them, but it’s good to find some that focus specifically on adult education, including part-time adult and community learning.</p>'
+  },
+  {
+  title: 'Adult Education Matters',
+  category: 'Articles',
+  author: 'DG Hendricks',
+  authorUrl: 'http://adulteducationmatters.blogspot.com',
+  publishedOn: '2016-08-30',
+  body: '<p>Our organization will be hosting its major event April 3-5, 2017 in Washington D.C. where adult learners will get to learn, build relationships and continue to become leaders in the adult literacy field. As a non-profit organization built by adult learners, we hold our Leadership Institute in Capitol Hill every four years to give adult learners the opportunity in meeting directly with decision makers and legislators who can help our cause.</p>'
+},
+{
+  title: 'Reaching Beyond the Adult Education Classroom with Technology',
+  category: 'Articles',
+  author: 'Digital Promises',
+  authorUrl: 'http://digitalpromise.org/2016/04/20/reaching-beyond-the-adult-education-classroom',
+  publishedOn: '2016-04-20',
+  body: '<p>Growing up in Oaxaca, Mexico, Octaviano was forced to leave school before completing the first grade. For the next 20 years, his only “academic skill” was the ability to write his own name. A seasonal farm hand, Octaviano continued that work when he moved to the United States, until an accident left him unable to. It was then that he decided to learn English and work toward becoming a U.S. citizen. His plan was solid, except for the fact that he made this decision while living in a rural area that did not offer many educational opportunities for adult learners.</p>'
+}
+]
+
+
+
+})();
+
+*/

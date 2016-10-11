@@ -1,0 +1,144 @@
+/*Portfolio CSS*/
+h1 {                                /*Main headers*/
+text-align: center;
+font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+  font-family:'Open Sans', sans-serif, Arial;
+  color: black;
+}
+
+#container2, #containerAbout, #containerContact, #container3 {
+  display: none;
+}
+
+#container2, #containerAbout, #containerContact, #container3, #mainSection {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.lineItUp {                             /*what does this connect to???*/
+  display: inline-block;
+}
+
+#nav {                                /*-- set up alignment for Menu*/
+   border: 10px solid #0088dd;
+   width: 93%;
+   height: 80px;
+   margin: auto;
+}
+
+.inlineMenu li{                                     /*--alignment for Target Audience--TBF*/
+   display: inline-block;
+   padding: 5px;
+   margin: 0px;
+   font-size: 16px;
+   border-left: 1px solid black;
+ }
+ul {                                    /*--removed bullets for Target Audience list*/
+  list-style-position:outside;
+  list-style-type:none;
+}
+
+#targetAudience ul li {
+  border: none;
+  display: block;
+
+}
+#ABE {                                  /*alignment for ABE Res box,  --*/
+  border: 8px solid #0088dd;
+  margin: 40px;
+  height: 195px;
+  width: 250px;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
+#LP {                                   /*<li> for ABE Res,changed to drop-down list .--*/
+  vertical-align:text-top;
+  float: left;
+
+}
+#ACT{                                   /*<li> for ABE Res,changed to drop-down list--*/
+  vertical-align:text-middle;
+  float: left;
+}
+#ART {                                  /*<li> for ABE Res,changed to drop-down list--*/
+  vertical-align: text-bottom;
+  float: left;
+}
+
+#ESOL {                                  /*alignment for ESOL Res box,  --*/
+  border: 8px solid #0088dd;
+  margin: 40px;
+  height: 195px;
+  width: 250px;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
+#PD {                                  /*alignment for Prof Dev Res box,  --*/
+  border: 8px solid #0088dd;
+  margin: 40px;
+  height: 160px;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/*PARKING LOT - HOLD CODE*/
+/*.orange{
+background-color: orange;
+}
+
+.yellow{
+ background-color: yellow;
+}
+.fuchsia{
+ background-color:fuchsia;
+}*/
+/*li {
+  margin: 10px;
+}*/
+
+@media screen and (max-width: 1360px)
+{
+  h1 {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 1200px)
+{
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/* all phones under 1000px */
+@media screen and (max-device-width: 1000px)
+{
+  h1 {
+    font-size: 32px;
+  }
+
+  body {
+    width: 50%;
+  }
+
+}
