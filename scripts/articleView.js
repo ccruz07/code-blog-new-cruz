@@ -116,6 +116,46 @@
     articleView.setTeasers();
   };
 
+articleView.handleFilters = function() {
+$('#filters').one('change', 'select', function() {
+resource = this.id.replace('-filter', '');
+page('/' + resource + '/' + $(this).val().replace(/\W+/g, '+')); // Replace any/all whitespace with a +
+});
+};
+
+  articleView.index = function(articles) {
+
+      $('#articles').show().siblings().hide();
+
+      $('#articles article').remove();
+      if(articles)
+      {
+        articles.forEach(function(a) {
+          $('#articles').html(render(a));
+        });
+      }
+      articleView.populateFilters();
+      // COMMENT: What does this method do?   ANS: calls articleView.populateFilters
+      //What is it's execution path?          ANS: IDK????
+      articleView.handleFilters();
+
+      // DONE: Replace setTeasers with just the truncation logic, if needed:
+      if ($('#articles article').length > 1) {
+        $('.article-body *:nth-of-type(n+2)').hide();
+      }
+
+    };
+
+    var render = function(article) {
+      var template = Handlebars.compile($('#article-template').text());
+
+      article.daysAgo = parseInt((new Date() - new Date(article.publishedOn))/60/60/24/1000);
+      article.publishStatus = article.publishedOn ? 'published ' + article.daysAgo + ' days ago' : '(draft)';
+      article.body = marked(article.body);
+
+      return template(article);
+    };
+
   articleView.initAdminPage = function() {
     var template = Handlebars.compile($('#author-template').text());
 

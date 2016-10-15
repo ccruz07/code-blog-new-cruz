@@ -17,6 +17,18 @@
     return template(this);
   };
 
+  Article.findWhere = function(field, value, callback) {
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM articles WHERE ' + field + ' = ?;',
+          data: [value]
+        }
+      ],
+      callback
+    );
+  };
+
   Article.createTable = function(callback) {
     webDB.execute("DROP TABLE IF EXISTS articles;");
     webDB.execute(
@@ -85,12 +97,12 @@
   };
 
   Article.fetchAll = function(next) {
-    webDB.execute('SELECT * FROM articles ORDER BY publishedOn DESC', function(rows) {
+    webDB.execute('SELECT * FROM articles', function(rows) {
       if (rows.length) {
         Article.loadAll(rows);
         next();
       } else {
-        $.getJSON('/data/blogArticles.json', function(rawData) {
+        $.getJSON('/scripts/blogArticles.json', function(rawData) {
           // Cache the json, so we don't need to request it next time:
           rawData.forEach(function(item) {
             var article = new Article(item); // Instantiate an article based on item from JSON
