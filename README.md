@@ -29,3 +29,7 @@ Oct 4, 2016- big problem, lost the entire portfolio file from my desktop IDK????
 Oct. 9, 2016- made class 12 updates: Home, Cruz Bio, & Repos all working correctly. Siteinfo.html not going to the correct location - ignore it. GH token pulls my repos and my collaborations on other projects. Would like to delete forked projects in GH, but need private account privileges - ignore it.
 
 Oct 11, 2016 - Class 13 Deployment to be launched in Heroku.
+
+Oct 15, 2016 - Class 13 deployment not launched in Heroku, same issues with login through the terminal.
+
+Oct 15, 2016 - Class 14 submitted to GH, had to disable GH Token before pushing.
